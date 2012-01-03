@@ -14,12 +14,13 @@ export LANG=ja_JP.UTF-8
 # あと、$PATH を先に持ってくると ls の alias がおかしくなっちゃうので駄目。
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export DISPLAY=:0.0
+export EDITOR=vim
 export SVN_EDITOR=vim
 #export JAVA_HOME=/usr/local/java
 #export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lig/dt.jar
 #export GREP_COLOR='01;33'
 #export GREP_OPTIONS='--color=auto'
-export GREP_OPTIONS='-Ir --color=auto --exclude-dir=\.svn'
+#export GREP_OPTIONS='-Ir --color=auto --exclude-dir=\.svn'
 export RSPEC=true
 export CLICOLOR=1
 #export LS_COLORS="no=00;31:fi=00;37:di=00;36:ln=00;31:ex=00;31"
@@ -39,7 +40,7 @@ alias c=clear
 alias s=screen
 #alias ll="ls -hl"
 # some more ls aliases
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -175,3 +176,4 @@ if
 fi
 
 bindkey -v
+source ~/.perlbrew/etc/bashrc
